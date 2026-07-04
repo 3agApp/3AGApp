@@ -45,6 +45,10 @@ Route::get('/downloads', function () {
     return Inertia::render('downloads');
 })->name('downloads');
 
+Route::get('/qs', function () {
+    return redirect()->away('https://github.com/3agApp/QuickSale/releases/latest/download/app-release.apk');
+})->name('downloads.quicksale');
+
 Route::post('/locale', [LocaleController::class, 'update'])->name('locale.update');
 
 // Guest routes
