@@ -41,6 +41,10 @@ Route::get('/products/{product:slug}', [ProductController::class, 'show'])->name
 Route::post('/packages/{package}/subscribe', [ProductController::class, 'subscribe'])->name('packages.subscribe')->middleware(['auth', 'verified']);
 Route::post('/packages/{package}/swap', [ProductController::class, 'swap'])->name('packages.swap')->middleware(['auth', 'verified']);
 
+Route::get('/downloads', function () {
+    return Inertia::render('downloads');
+})->name('downloads');
+
 Route::post('/locale', [LocaleController::class, 'update'])->name('locale.update');
 
 // Guest routes

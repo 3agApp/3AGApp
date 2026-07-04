@@ -21,6 +21,7 @@ import type { SharedData } from '@/types';
 const navigationItems = [
     { href: home.url(), labelKey: 'nav.home', fallback: 'Home' },
     { href: productsIndex.url(), labelKey: 'nav.products', fallback: 'Products' },
+    { href: '/downloads', labelKey: 'nav.downloads', fallback: 'Downloads' },
 ];
 
 const localeMeta: Record<string, { label: string; flag: string }> = {
