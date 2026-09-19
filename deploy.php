@@ -10,7 +10,7 @@ require 'recipe/laravel.php';
 |--------------------------------------------------------------------------
 */
 
-set('repository', 'https://github.com/SourovCodes/3AG-App.git');
+set('repository', 'https://github.com/3agApp/3AGApp.git');
 set('branch', getenv('DEPLOY_BRANCH') ?: 'main');
 set('keep_releases', 2);
 
